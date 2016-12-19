@@ -1,0 +1,184 @@
+body {
+	background: url('http://i.annihil.us/u/prod/marvel/i/mg/9/40/537bcb2289d3a.gif');
+}
+ul {
+	padding-left: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	color: white;
+}
+
+.comicfy {
+	background: #F0141E;
+	font-family: 'Bangers', cursive;
+	color: white;
+}
+
+.navbar-brand {
+	font-size: 27pt;
+}
+
+.searchContainer {
+    float: right;
+    width: 40%;
+    font-size: 25pt;
+    color: white;
+}
+
+.searchContainer p {
+    padding-left: 30px;
+    display: inline;
+}
+.searchContainer .glyphicon {
+    font-size: 19pt;
+}
+
+.searchContainer input{
+	background: transparent;
+    text-align: left;
+    padding: 21px;
+    width: 70%;
+    float: right;
+    font-size: 23pt;
+    color: white;
+}
+
+hero-show {
+	margin-bottom: 90px;
+}
+
+.heroContainer {
+	height: 650px;
+	margin: 7px;
+	cursor: pointer;
+	box-shadow: 3px 3px 3px #666;
+    -moz-box-shadow: 3px 3px 3px #666;
+    -webkit-box-shadow: 3px 3px 3px #666
+}
+
+.heroContainer:hover {
+	box-shadow: 5px 5px 5px #666;
+    -moz-box-shadow: 5px 5px 5px #666;
+    -webkit-box-shadow: 5px 5px 5px #666
+}
+
+.heroFront {
+	color: white;
+	background: #171717;
+}
+
+.heroBack {
+	color: black;
+}
+
+.frontCard {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.frontCard h1 {
+	font-family: 'Bangers', cursive;
+	position: absolute;
+    font-size: 43pt;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    z-index: 3;
+}
+.frontCard.bottomLeft h1 {
+    bottom: 25px;
+    left: 44px;
+}
+.frontCard.topLeft h1 {
+    top: 25px;
+    left: 44px;
+}
+.frontCard.bottomRight h1 {
+    bottom: 25px;
+    right: 44px;
+}
+.frontCard.topRight h1 {
+    top: 25px;
+    right: 44px;
+}
+
+.frontCard .nameBackground {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background: grey;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.frontCard.bottomLeft .nameBackground, .frontCard.bottomRight .nameBackground {
+    bottom: 25px;
+}
+.frontCard.topLeft .nameBackground, .frontCard.topRight .nameBackground {
+    top: 25px;
+}
+
+.frontCard img.heroImage {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 85%;
+    height: 90%;
+    margin: auto;
+}
+
+.frontCard img.marvelLogo {
+    position: absolute;
+    height: 100px;
+    width: auto;
+}
+
+.frontCard.bottomLeft img.marvelLogo {
+	top: 25px;
+    right: 44px;
+}
+.frontCard.bottomRight img.marvelLogo {
+	top: 25px;
+    left: 44px;
+}
+.frontCard.topLeft img.marvelLogo {
+	bottom: 25px;
+    right: 44px;
+}
+.frontCard.topRight img.marvelLogo {
+	bottom: 25px;
+    left: 44px;
+}
+
+.heroCardContainer { 
+	position: absolute;
+    left: 0; right: 0;
+    margin: auto;
+    width: 95%;
+    height: 85%;
+    overflow: scroll;
+    margin-top: 15px;
+ }
+
+.cardScrollContainer {
+	overflow: auto;
+    white-space: nowrap;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cardScrollContainer hero-show {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.heroBack p {
+	white-space: normal;
+}

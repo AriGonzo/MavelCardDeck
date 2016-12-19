@@ -1,0 +1,11 @@
+<form name="superHeroRegistration" ng-submit="heroInputDir.newHeroLocal(heroInputDir.newHero)" my-enter="heroInputDir.newHeroLocal(heroInputDir.newHero)" class="row" novalidate>
+	<div class="col-md-6">
+		<label>Name</label>
+		<input class="form-control" type="text" id="heroName" name="heroName" ng-model="heroInputDir.newHero.name" required />
+	</div>
+	<div class="col-md-6">
+		<label>Secret Identity</label>
+		<input class="form-control" type="text" name="heroID" ng-model="heroInputDir.newHero.secretIdentity" required />
+	</div>
+	<button class="btn btn-success pull-right">Submit</button>
+</form>

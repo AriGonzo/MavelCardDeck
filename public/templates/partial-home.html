@@ -1,0 +1,7 @@
+<div class="heroCardContainer">
+	<div infinite-scroll='home.heroAPI.nextPage()' class="cardScrollContainer" infinite-scroll-disabled='home.heroAPI.busy' infinite-scroll-horizontal="true" infinite-scroll-container="'.heroCardContainer'">	
+		<hero-show ng-repeat="hero in home.heroAPI.heroes" hero="hero" index={{$index}}></hero-show>
+		<div style='clear: both;'></div>
+	</div>
+</div>
+

@@ -1,0 +1,17 @@
+<flip flip-width="400px" flip-height="525px">
+  <flip-panel>
+    <div class="heroContainer heroFront" ng-style="{'background-color': '#'+hero.mainColor.hexa}">
+    	<div class="frontCard" ng-random-class ng-classes="card.classes">
+			<img class="heroImage" ng-src="{{hero.images.thumbnail}}" >
+			<h1>{{hero.superName}}</h1>
+			<div class="nameBackground"></div>
+			<img src="/images/marvelLogo.jpg" class="marvelLogo" >
+		</div>
+	</div>
+  </flip-panel>
+  <flip-panel>
+    <div class="row heroContainer heroBack" ng-style="{'background-color': '#EEDF8F'}">
+		<p class="col-md-12 text-center">{{hero.description}}</p>
+	</div>
+  </flip-panel>
+</flip>

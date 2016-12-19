@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular App</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body ng-app="mainApp">
+	<nav class="navbar comicfy" role="navigation">
+	    <div class="navbar-header">
+	        <a class="navbar-brand" ui-sref="#">Marvel Card Collection</a>
+	    </div>
+	    <div class="searchContainer">
+		    <p class="search" ui-sref="home"><span class="glyphicon glyphicon-search"></span> Search</p>
+		    <input class="form-control" />
+	    </div>
+	</nav>
+
+
+	<div class="container">
+		<div ui-view></div>
+	</div>
+<!-- Libraries -->
+<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="lib/angular/angular.js"></script>
+<script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script type="text/javascript" src="lib/ng-infinite-scroll/build/ng-infinite-scroll-alternate.js"></script>
+<!-- Components -->
+<script type="text/javascript" src="components/app.js"></script>
+<script type="text/javascript" src="components/homeCtrl.js"></script>
+<script type="text/javascript" src="components/aboutCtrl.js"></script>
+<script type="text/javascript" src="components/heroDirective.js"></script>
+<script type="text/javascript" src="services/Services.js"></script>
+</body>
+</html>
