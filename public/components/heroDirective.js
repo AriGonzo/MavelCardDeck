@@ -14,25 +14,6 @@ app.directive('heroShow', function(){
 	}
 });
 
-app.directive('heroInput', ['focus', function(focus){
-	return {
-		restrict: 'E',
-		templateUrl: 'templates/heroInput.html',
-		bindToController: {
-			addHero: '&'
-		},
-		controller: function(){
-			this.newHeroLocal = function(hero){
-				console.log(hero)
-				this.addHero({newHeroObj: hero})
-				this.newHero = {}
-				focus('heroName')
-			}
-		},
-		controllerAs: 'heroInputDir'
-	}
-}]);
-
 app.directive('myEnter', function () {
     return function (scope, element, attrs) {
         element.bind("keydown keypress", function (event) {
@@ -129,7 +110,6 @@ app.directive("flip", function(){
       
     }
   }
-  
 });
 
 app.directive("flipPanel", function(){

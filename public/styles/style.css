@@ -74,6 +74,7 @@ hero-show {
 
 .heroBack {
 	color: black;
+    padding: 20px;
 }
 
 .frontCard {
@@ -155,6 +156,54 @@ hero-show {
 .frontCard.topRight img.marvelLogo {
 	bottom: 25px;
     left: 44px;
+}
+
+.heroHeader {
+    font-size: 35pt;
+    font-family: 'Bangers', cursive;
+    color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    background: yellow;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.heroThumbnail {
+    width: 100%;
+    border: 3px solid black;
+}
+
+.powerList {
+    height: 130px;
+    overflow: scroll;
+    border: 3px solid black;
+    padding: 0;
+}
+
+.powerList table tr:nth-of-type(odd) {
+    background-color: rgb(218, 203, 121);
+}
+
+.heroStory p {
+    font-size: 14pt;
+    text-align: justify;
+    margin-top: 20px;
+    height: 205px;
+    overflow: scroll;
+}
+
+.affiliations {
+    padding: 0 15px;
+    margin-top: 15px;
+}
+
+.speciesContainer {
+    text-align: center;
+}
+
+.speciesContainer h3 {
+    padding-top: 0;
 }
 
 .heroCardContainer { 

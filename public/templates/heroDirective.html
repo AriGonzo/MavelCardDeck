@@ -11,7 +11,50 @@
   </flip-panel>
   <flip-panel>
     <div class="row heroContainer heroBack" ng-style="{'background-color': '#EEDF8F'}">
-		<p class="col-md-12 text-center">{{hero.description}}</p>
+    	<div class="row">
+    		<div class="col-md-12 heroHeader">
+    			<span>{{hero.superName}}</span>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-5">
+    			<img class="heroThumbnail" ng-src="{{hero.images.thumbnail}}" >
+    		</div>
+    		<div class="col-md-7 powerList">
+    			<table class="table table-striped">
+    				<tr ng-repeat="power in hero.powers">
+    					<td>{{power}}</td>
+    				</tr>
+    			</table>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-12 heroStory">
+    			<p>
+    				{{hero.description}}
+    			</p>
+    		</div>
+    	</div>
+    	<div class="row affiliations">
+    		<div class="col-md-6 powerList">
+    			<table class="table table-striped">
+    				<thead>
+    					<tr>
+    						<td>
+    							<strong>Team Affiliations</strong>
+    						</td>
+    					</tr>
+    				</thead>
+    				<tr ng-repeat="team in hero.teams">
+    					<td>{{team}}</td>
+    				</tr>
+    			</table>
+    		</div>
+    		<div class="col-md-6 speciesContainer">
+    			<h3>Species</h3>
+    			<h4>{{hero.species[0]}}</h4>
+    		</div>
+    	</div>
 	</div>
   </flip-panel>
 </flip>
