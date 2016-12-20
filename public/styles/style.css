@@ -1,5 +1,6 @@
 body {
 	background: url('http://i.annihil.us/u/prod/marvel/i/mg/9/40/537bcb2289d3a.gif');
+    overflow: hidden;
 }
 ul {
 	padding-left: 0;
@@ -19,6 +20,16 @@ a {
 	color: white;
 }
 
+/*NavBar*/
+.slide-out {
+    transition: 0.5s linear all;
+    transform: translateX(-423px);
+}
+.slide-in {
+    transition: 0.40s linear all;
+    transform: translateX(0px);
+}
+
 .navbar-brand {
 	font-size: 27pt;
 }
@@ -28,11 +39,13 @@ a {
     width: 40%;
     font-size: 25pt;
     color: white;
+    margin-right: -423px;
 }
 
 .searchContainer p {
     padding-left: 30px;
     display: inline;
+    cursor: pointer;
 }
 .searchContainer .glyphicon {
     font-size: 19pt;
@@ -47,6 +60,7 @@ a {
     font-size: 23pt;
     color: white;
 }
+/*******/
 
 hero-show {
 	margin-bottom: 90px;

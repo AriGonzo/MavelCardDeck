@@ -140,4 +140,12 @@ app.directive("ngRandomClass", function () {
 	        elem.addClass(scope.ngClasses[Math.floor(Math.random() * (scope.ngClasses.length))]);
 	    }
 	}
-})
+});
+
+app.directive('focusOn', function() {
+   return function(scope, elem, attr) {
+      scope.$on(attr.focusOn, function(e) {
+          elem[0].focus();
+      });
+   };
+});
